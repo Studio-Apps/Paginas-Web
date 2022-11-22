@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #515151;
+    display: grid;
+    place-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Container{
+    width: 500px;
+    height: 150px;
+    position: relative;
+    margin: 10px;
+}
+.Info{
+    width: 348px;
+    height: 150px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 98% 90%, 100% 80%, 98% 70%, 100% 60%, 98% 50%, 100% 40%,
+    98% 30%, 100% 20%, 98% 10%, 100% 0%);
+    position: relative;
+}
+.Info::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 100%;
+    background-color: #123d5b;
+}
+.Info::after{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "";
+    width: 60px;
+    height: 30px;
+    transform: translateY(-50%);
+    background-color: #515151;
+}
+.Concert{
+    margin-left: 25px;
+    padding-top: 20px;
+    color: #123d5b;
+    text-transform: uppercase;
+}
+.Artist{
+    margin-left: 25px;
+    color: teal;
+    text-transform: uppercase;
+}
+.Partner{
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: mediumvioletred;
+}
+.City{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    text-transform: uppercase;
+    color: orangered;
+    text-shadow: 0px 0px 4px darkturquoise,
+                 0px 0px 4px darkturquoise;
+}
+.Data{
+    position: absolute;
+    padding: 5px;
+    top: 60%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    background-color: #123d5b;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+.Data::before{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    content: "";
+    width: 2px;
+    height: 80%;
+    background-color: white;
+}
+.Link{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(4% 0%, 0% 10%, 4% 20%, 0% 30%, 4% 40%, 0% 50%, 4% 60%, 0% 70%, 4% 80%, 0% 90%, 4% 100%,
+    100% 100%, 100% 0%);
+    transition: 0.25s;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.Link::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "";
+    width: 60px;
+    height: 30px;
+    transform: translateY(-50%);
+    background-color: #515151;
+}
+.Link:hover{
+    transform: rotate(45deg) translateY(28px) translateX(72px);
+    z-index: 10;
+}
+.Type{
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+.Data2{
+    display: block;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.Date{
+    position: absolute;
+    font-size: 14px;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    color: #515151;
+    padding: 2px;
+    border-radius: 4px;
+}
+.Link1{
+    background-color: steelblue;
+}
+.Link2{
+    background-color: purple;
+}
+.Link3{
+    background-color: orangered;
+}
